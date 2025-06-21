@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -20,7 +19,7 @@
                 <a href="#home" class="nav-link">Beranda</a>
                 <a href="#about" class="nav-link">Tentang</a>
                 <a href="#submit-idea" class="nav-link">Kirim Ide</a>
-                <a href="#admin" class="nav-link admin-link">Dashboard</a>
+                <a href="Pesan.html" class="nav-link admin-link" target="_blank">Dashboard</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -30,7 +29,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
@@ -47,7 +45,7 @@
                             <i class="fas fa-lightbulb"></i>
                             Kirim Ide Konten
                         </a>
-                        <a href="https://www.tiktok.com/@faktapopuler96?_t=ZS-8xOZiYvGS5R&_r=1" target="_blank" class="btn btn-secondary">
+                        <a href="https://tiktok.com/@faktapopuler" target="_blank" class="btn btn-secondary">
                             <i class="fab fa-tiktok"></i>
                             Follow TikTok
                         </a>
@@ -71,7 +69,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
@@ -95,15 +92,15 @@
                     </p>
                     <div class="stats-grid">
                         <div class="stat-item">
-                            <div class="stat-number">1,5K</div>
+                            <div class="stat-number">100K+</div>
                             <div class="stat-label">Followers</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">20+</div>
+                            <div class="stat-number">500+</div>
                             <div class="stat-label">Video Edukasi</div>
                         </div>
                         <div class="stat-item">
-                            <div class="stat-number">300RB</div>
+                            <div class="stat-number">1M+</div>
                             <div class="stat-label">Total Views</div>
                         </div>
                     </div>
@@ -117,7 +114,6 @@
         </div>
     </section>
 
-    <!-- Submit Idea Section -->
     <section id="submit-idea" class="submit-idea">
         <div class="container">
             <div class="section-header">
@@ -174,26 +170,6 @@
         </div>
     </section>
 
-    <!-- Admin Dashboard -->
-    <section id="admin" class="admin-dashboard" style="display: none;">
-        <div class="container">
-            <div class="admin-header">
-                <h2>Dashboard Admin</h2>
-                <div class="admin-controls">
-                    <input type="password" id="adminPassword" placeholder="Masukkan password admin">
-                    <button id="loginBtn" class="btn btn-primary">Login</button>
-                    <button id="logoutBtn" class="btn btn-secondary" style="display: none;">Logout</button>
-                </div>
-            </div>
-            <div id="adminContent" style="display: none;">
-                <div class="ideas-grid" id="ideasGrid">
-                    <!-- Ideas will be loaded here -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -230,7 +206,6 @@
         </div>
     </footer>
 
-    <!-- Loading Overlay -->
     <div id="loadingOverlay" class="loading-overlay" style="display: none;">
         <div class="loading-spinner">
             <i class="fas fa-spinner fa-spin"></i>
@@ -238,7 +213,6 @@
         </div>
     </div>
 
-    <!-- Success Modal -->
     <div id="successModal" class="modal" style="display: none;">
         <div class="modal-content">
             <div class="modal-header">

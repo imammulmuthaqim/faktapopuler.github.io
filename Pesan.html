@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Faktapopuler</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <section id="admin" class="admin-dashboard">
+        <div class="container">
+            <div class="admin-header">
+                <h2>Dashboard Admin Faktapopuler</h2>
+                <div class="admin-controls">
+                    <input type="password" id="adminPassword" placeholder="Masukkan password admin">
+                    <button id="loginBtn" class="btn btn-primary">Login</button>
+                    <button id="logoutBtn" class="btn btn-secondary" style="display: none;">Logout</button>
+                </div>
+            </div>
+            <div id="adminContent" style="display: none;">
+                <h3 style="margin-bottom: 20px; text-align: center;">Daftar Ide Konten Pengguna</h3>
+                <div class="ideas-grid" id="ideasGrid">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+             <div class="footer-bottom">
+                <p>&copy; 2024 Faktapopuler. Admin Panel.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="pesan.js"></script>
+</body>
+</html>
