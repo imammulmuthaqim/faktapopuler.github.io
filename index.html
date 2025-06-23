@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktapopuler - Platform Edukasi TikTok</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Faktapopuler</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#submit-idea" class="nav-link">Kirim Ide</a>
+                <a href="Admin.html" class="nav-link admin-link" target="_blank">Dashboard</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Belajar Jadi Lebih Menyenangkan
+                    </h1>
+                    <p class="hero-description">
+                        Bergabunglah dengan jutaan orang yang belajar fakta-fakta menarik melalui konten edukasi di TikTok. 
+                        Mari kita jelajahi dunia pengetahuan bersama!
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#submit-idea" class="btn btn-primary">
+                            <i class="fas fa-lightbulb"></i>
+                            Kirim Ide Konten
+                        </a>
+                        <a href="https://tiktok.com/@faktapopuler" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-tiktok"></i>
+                            Follow TikTok
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="floating-card">
+                        <i class="fas fa-brain"></i>
+                        <span>Edukasi Kreatif</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-rocket"></i>
+                        <span>Konten Viral</span>
+                    </div>
+                    <div class="floating-card">
+                        <i class="fas fa-users"></i>
+                        <span>Komunitas Belajar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Content Creator</h3>
+                            <p>Faktapopuler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">Tentang Faktapopuler</h2>
+                    <p class="about-description">
+                        Halo! Saya adalah seorang content creator yang berdedikasi untuk menyebarkan pengetahuan 
+                        melalui platform TikTok. Dengan channel "Faktapopuler", saya berbagi fakta-fakta menarik, 
+                        tips edukatif, dan informasi bermanfaat yang dikemas dalam format yang mudah dipahami dan menghibur.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">100K+</div>
+                            <div class="stat-label">Followers</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Video Edukasi</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1M+</div>
+                            <div class="stat-label">Total Views</div>
+                        </div>
+                    </div>
+                    <div class="mission">
+                        <h4>Misi Saya</h4>
+                        <p>Membuat pembelajaran menjadi lebih menyenangkan dan mudah diakses oleh semua orang, 
+                        terutama generasi muda yang aktif di media sosial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="submit-idea" class="submit-idea">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Punya Ide Konten Edukasi?</h2>
+                <p class="section-description">
+                    Bagikan ide kreatif Anda untuk konten edukasi TikTok. Ide terbaik akan saya review dan 
+                    mungkin akan menjadi konten selanjutnya!
+                </p>
+            </div>
+            <div class="form-container">
+                <form id="ideaForm" class="idea-form">
+                    <div class="form-group">
+                        <label for="name">Nama Pengirim</label>
+                        <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Kategori Konten</label>
+                        <select id="category" name="category" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="sains">Sains & Teknologi</option>
+                            <option value="sejarah">Sejarah</option>
+                            <option value="kesehatan">Kesehatan</option>
+                            <option value="lingkungan">Lingkungan</option>
+                            <option value="psikologi">Psikologi</option>
+                            <option value="ekonomi">Ekonomi</option>
+                            <option value="budaya">Budaya</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Judul Ide Konten</label>
+                        <input type="text" id="title" name="title" placeholder="Contoh: Fakta Menarik Tentang Laut Dalam" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Isi Pesan atau Ide Kreatif</label>
+                        <textarea id="message" name="message" rows="5" 
+                                placeholder="Jelaskan ide konten Anda secara detail. Semakin kreatif dan edukatif, semakin baik!" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="sources">Sumber Referensi (Opsional)</label>
+                        <textarea id="sources" name="sources" rows="3" 
+                                placeholder="Cantumkan sumber atau referensi yang mendukung ide Anda"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Kirim Pesan & Ide
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Faktapopuler</span>
+                    </div>
+                    <p>Platform edukasi yang menginspirasi pembelajaran melalui konten kreatif di TikTok.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Ikuti Saya</h4>
+                    <div class="social-links">
+                        <a href="https://tiktok.com/@faktapopuler" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>Email: faktapopuler@gmail.com</p>
+                    <p>Untuk kolaborasi dan kerjasama</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Faktapopuler. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Mengirim pesan Anda...</p>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Pesan & Ide Berhasil Dikirim!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Terima kasih atas ide kreatif Anda! Saya akan review pesan ini dan mungkin akan menjadi konten selanjutnya di TikTok.</p>
+            </div>
+            <div class="modal-footer">
+                <button id="closeModal" class="btn btn-primary">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
